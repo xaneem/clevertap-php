@@ -1,0 +1,14 @@
+{
+    "name": "xaneem/clevertap-php",
+    "description": "Push events from your PHP application (Unofficial wrapper)",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Saneem",
+            "email": "hello@saneem.me"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    }
+}
