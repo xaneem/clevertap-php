@@ -1,6 +1,6 @@
 {
     "name": "xaneem/clevertap-php",
-    "description": "Push events from your PHP application (Unofficial wrapper)",
+    "description": "Pushes events to your CleverTap account from your PHP application (Unofficial wrapper)",
     "license": "MIT License",
     "authors": [
         {
