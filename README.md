@@ -8,31 +8,36 @@ Install using [Composer](https://getcomposer.org/)
     composer require xaneem/clevertap-php
 
 ##Sample code
-Code for setting a profile and pushing an event. Make sure you replace youe
+Code for setting a profile and pushing an event. Please make sure you replace your Account ID and Passcode. It's available in Settings dashboard inside CleverTap.
 
     require_once "vendor/autoload.php";
 
     $clevertap = new \CleverTap\clevertap(
-        'XXX-XXX-XXXX', 
-        'XXX-XXX-XXXX');
+        'YOUR-ACCOUNT-ID', 
+        'YOUR-PASSCODE'
+    );
 
-    // Setting Profile
-    print_r($clevertap->setProfile(
-    	'john@example.com',
-    	[
-    		'Name' => 'John Doe',
-    		'Category' => 'Platinum'
-    	]
-    ));
+    // Setting profile and identity information
+    print_r(
+        $clevertap->setProfile(
+        	'john@example.com',
+        	[
+        		'Name' => 'John Doe',
+        		'Category' => 'Platinum'
+        	]
+        )
+    );
 
-    // Creating Event
-    print_r($clevertap->pushEvent(
-    	'Purchased product',
-    	[
-    		'Amount' => 2,
-    		'Currency' => 'BTC'
-    	]
-    ));
+    // Pushing an event
+    print_r(
+        $clevertap->pushEvent(
+        	'Purchased product',
+        	[
+        		'Amount' => 2,
+        		'Currency' => 'BTC'
+        	]
+        )
+    );
 
 ## License
 MIT License
